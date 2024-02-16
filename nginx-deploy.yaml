@@ -19,7 +19,7 @@ spec:
         - containerPort: 80
 
 ---
-apiVerison: v1
+apiVersion: v1
 kind: service
 metadata:
   name: svc-nginx
