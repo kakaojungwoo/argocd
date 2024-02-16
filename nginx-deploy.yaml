@@ -17,3 +17,14 @@ spec:
         image: nginx
         ports:
         - containerPort: 80
+
+---
+apiVerison: v1
+kind: service
+metadata:
+  name: svc-nginx
+spec:
+  selector: 
+    app: nginx
+  ports:
+    - port: 80
